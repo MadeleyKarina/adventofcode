@@ -6,17 +6,17 @@ function main() {
     const passwords = readFile("./input.txt");
 
     switch (DEFAULT_CASE) {
-		case 1:
-			const result1 = getOldValidPasswords(passwords);
-			console.log(result1);
-			break;
-		case 2:
-			const result2 = getNewValidPasswords(passwords);
-			console.log(result2);
-			break;
-		default:
-			console.log("Not found");
-	}
+        case 1:
+            const result1 = getOldValidPasswords(passwords);
+            console.log(result1);
+            break;
+        case 2:
+            const result2 = getNewValidPasswords(passwords);
+            console.log(result2);
+            break;
+        default:
+            console.log("Not found");
+    }
 }
 
 function getNewValidPasswords(passwords) {
@@ -54,7 +54,7 @@ function getOldValidPasswords(passwords) {
             validCount++;
         }
     }
-    return validCount
+    return validCount;
 }
 
 function countChars(password, letter) {
